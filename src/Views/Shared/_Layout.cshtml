@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Kilfa</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <!--[if lt IE 9]>
+      <script src="~/scripts/html5shiv.min.js"></script>
+      <script src="~/scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+
+    @RenderSection("scripts", false)
+    <script src="~/Scripts/underscore-min.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/jquery.jrumble.1.3.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/Scripts/jquery.ion.sound.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Scripts/button.js"></script>
+</body>
+</html>
+
